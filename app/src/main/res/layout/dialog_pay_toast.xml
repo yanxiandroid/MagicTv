@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1920"
+    android:layout_height="@dimen/h_1080"
+    android:background="#F2333335">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/w_300"
+        android:layout_marginRight="@dimen/w_300"
+        android:layout_marginTop="@dimen/h_60"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_56" />
+
+
+    <FrameLayout
+        android:id="@+id/pay_bg"
+        android:layout_width="@dimen/w_786"
+        android:layout_height="@dimen/h_748"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_157"
+        android:alpha="0.85"
+        android:background="#12b0ff">
+
+
+
+
+        <ImageView
+            android:id="@+id/pay_icon"
+            android:layout_width="@dimen/w_264"
+            android:layout_height="@dimen/h_72"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/h_48"
+            android:src="@drawable/pay_alipay_icon" />
+
+        <ImageView
+            android:layout_width="@dimen/w_502"
+            android:background="#ffffff"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/h_48"
+            android:layout_height="@dimen/h_502" />
+
+        <ImageView
+            android:id="@+id/scan_code_img"
+            android:layout_width="@dimen/w_502"
+            android:layout_height="@dimen/h_502"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/h_48" />
+
+        <ImageView
+            android:id="@+id/payment_icon"
+            android:layout_width="@dimen/w_46"
+            android:layout_height="@dimen/h_46"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/h_48"
+            android:src="@drawable/alipay_icon" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_time_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/w_80"
+        android:layout_marginRight="@dimen/w_80"
+        android:layout_marginBottom="@dimen/h_50"
+        android:textColor="#fff"
+        android:textSize="@dimen/w_45"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/w_1920"
+        android:layout_height="@dimen/h_1080" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yht.iptv.tools.VerticalViewPager
+            android:id="@+id/vertical_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_down_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_112"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/hotel_food_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w_230"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/general_press"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/w_28" />
+
+            <ImageView
+                android:layout_width="@dimen/w_52"
+                android:layout_height="@dimen/h_52"
+                android:layout_marginLeft="@dimen/w_5"
+                android:layout_marginRight="@dimen/w_5"
+                android:src="@drawable/key_ok" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/general_add_car"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/w_28" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/hotel_food_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/general_press"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/w_28" />
+
+            <ImageView
+                android:layout_width="@dimen/w_52"
+                android:layout_height="@dimen/h_52"
+                android:layout_marginLeft="@dimen/w_5"
+                android:layout_marginRight="@dimen/w_5"
+                android:src="@drawable/key_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/general_enter_car"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/w_28" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_food_car_icon"
+        android:layout_width="@dimen/w_36"
+        android:layout_height="@dimen/h_34"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/h_68"
+        android:layout_marginRight="@dimen/w_374"
+        android:src="@drawable/hotel_food_car_icon" />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/h_86"
+        android:layout_marginRight="@dimen/w_358">
+
+        <TextView
+            android:id="@+id/car_num_text"
+            android:layout_width="@dimen/w_36"
+            android:layout_height="@dimen/h_34"
+            android:background="@drawable/food_car_tips_shape"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/w_24"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+    <include layout="@layout/nothing_view"></include>
+</RelativeLayout>

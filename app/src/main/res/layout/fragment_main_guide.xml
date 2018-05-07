@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+    <include
+        android:id="@+id/guide_info"
+        layout="@layout/general_main_info" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/w_878"
+        android:layout_height="@dimen/h_656"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/w_80"
+        android:layout_marginTop="@dimen/h_190"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/guide_welcome"
+            android:textColor="#feefa9"
+            android:textSize="@dimen/w_65" />
+
+        <TextView
+            android:id="@+id/tv_Passenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_welcome"
+            android:layout_marginTop="@dimen/h_48"
+            android:text="@string/guide_dear"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_52" />
+
+        <TextView
+            android:id="@+id/tv_welcome_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Passenger"
+            android:layout_marginTop="@dimen/h_30"
+            android:lineSpacingExtra="@dimen/h_10"
+            android:text="@string/guide_detail"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_38" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_language_zh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/h_40"
+                android:layout_marginLeft="@dimen/w_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_language_zh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="中文"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/w_42" />
+
+                <ImageView
+                    android:id="@+id/iv_under_line_zh"
+                    android:layout_width="@dimen/w_148"
+                    android:layout_height="@dimen/h_3"
+                    android:layout_marginTop="@dimen/h_12"
+                    android:src="@drawable/under_line"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/h_40"
+                android:layout_marginLeft="@dimen/w_80"
+                android:layout_toRightOf="@+id/ll_language_zh"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_language_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="English"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/w_42" />
+
+                <ImageView
+                    android:id="@+id/iv_under_line_en"
+                    android:layout_width="@dimen/w_148"
+                    android:layout_height="@dimen/h_3"
+                    android:layout_marginTop="@dimen/h_12"
+                    android:src="@drawable/under_line"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/press_info"
+        layout="@layout/general_down_info" />
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/w_24"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>

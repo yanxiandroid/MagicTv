@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_178"
+        android:layout_marginTop="@dimen/h_162"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/w_74"
+            android:layout_height="@dimen/h_74"
+            android:src="@drawable/weather_icon" />
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_28"
+            android:text="@string/weather"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_60" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weather"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_230"
+        android:layout_marginTop="@dimen/h_318"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_weather_tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_190" />
+
+        <TextView
+            android:id="@+id/tv_weather_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_48"
+            android:layout_marginTop="@dimen/h_30"
+            android:layout_toRightOf="@+id/tv_weather_tmp"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_55" />
+
+        <ImageView
+            android:id="@+id/iv_weather_icon"
+            android:layout_width="@dimen/w_90"
+            android:layout_height="@dimen/h_90"
+            android:layout_marginLeft="@dimen/w_62"
+            android:layout_marginTop="@dimen/h_12"
+            android:layout_toRightOf="@+id/tv_weather_city"
+             />
+
+        <TextView
+            android:id="@+id/tv_weather_cond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_weather_city"
+            android:layout_below="@+id/tv_weather_city"
+            android:layout_marginTop="@dimen/h_15"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+        <TextView
+            android:id="@+id/tv_weather_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_weather_city"
+            android:layout_marginLeft="@dimen/w_20"
+            android:layout_marginTop="@dimen/h_15"
+            android:layout_toRightOf="@+id/tv_weather_cond"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+        <TextView
+            android:id="@+id/tv_weather_damp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_weather_city"
+            android:layout_below="@+id/tv_weather_cond"
+            android:layout_marginTop="@dimen/h_15"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+        <TextView
+            android:id="@+id/tv_weather_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_weather_wind"
+            android:layout_marginLeft="@dimen/w_20"
+            android:layout_marginTop="@dimen/h_15"
+            android:layout_toRightOf="@+id/tv_weather_damp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_three_days_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_113"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_50"
+            android:layout_marginRight="@dimen/w_50"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_today_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8/24"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+            <ImageView
+                android:id="@+id/iv_today_icon"
+                android:layout_width="@dimen/w_80"
+                android:layout_height="@dimen/h_80"
+                android:layout_marginLeft="@dimen/w_20"
+                android:src="@mipmap/weathericon"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+
+            <TextView
+                android:id="@+id/tv_today_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="--℃ ~ --℃"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_50"
+            android:layout_marginRight="@dimen/w_50"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_tomorrow_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="明天"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+            <ImageView
+                android:id="@+id/iv_tomorrow_icon"
+                android:layout_width="@dimen/w_80"
+                android:layout_height="@dimen/h_80"
+                android:layout_marginLeft="@dimen/w_20"
+                android:src="@mipmap/weathericon"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+            <TextView
+                android:id="@+id/tv_tomorrow_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="--℃ ~ --℃"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_50"
+            android:layout_marginRight="@dimen/w_50"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_threeDay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后天"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+            <ImageView
+                android:id="@+id/iv_threeDay_icon"
+                android:layout_width="@dimen/w_80"
+                android:layout_height="@dimen/h_80"
+                android:layout_marginLeft="@dimen/w_20"
+                android:src="@mipmap/weathericon"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+
+            <TextView
+                android:id="@+id/tv_threeDay_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_20"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

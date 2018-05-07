@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.yht.iptv"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 64
+        versionName "2.0"
+    }
+
+    //签名配置
+    signingConfigs {
+        releaseConfig {
+            storeFile file('D:/sign/iptv_sign.jks')
+            storePassword "androiddev"
+            keyAlias 'hyzn_iptv'
+            keyPassword "androiddev"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+    android.applicationVariants.all {
+
+        variant ->
+            variant.outputs.each {
+                output ->
+                    output.outputFile = new File(output.outputFile.parent,
+                            "MagicTV-" +
+                                    "V" + defaultConfig.versionName + "." + defaultConfig.versionCode + "_" +
+                                    buildType.name + ".apk");
+            }
+    }
+    //编码配置
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/pldroid-player-1.6.0.jar')
+    compile 'com.danikula:videocache:2.7.0'
+    //    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.apkfuns.logutils:library:1.5.1.1'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.5.0@aar'
+    compile project(':TVTools')
+    compile 'com.tv.boost:tv-recyclerview:1.0.7.5'
+    //    compile 'com.tv.boost:tv-recyclerview:1.1.0'
+    compile 'me.codeboy.android:align-text-view:2.3.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile files('libs/zxing.jar')
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.github.ybq:Android-SpinKit:1.0.5'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+
+    compile files('libs/mina-core-2.0.16.jar')
+    compile files('libs/slf4j-api-1.7.21.jar')
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+}

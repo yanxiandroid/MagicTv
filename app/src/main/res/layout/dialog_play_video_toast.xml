@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/w_880"
+    android:layout_height="@dimen/h_364"
+    android:background="#F2333335">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_234"
+        android:text="@string/exit_play_toast"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/w_42"
+        android:paddingTop="@dimen/h_30"
+        android:paddingBottom="@dimen/h_30"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_2"
+        android:background="#1A000000"
+        android:layout_below="@+id/tv_content"
+        />
+    <LinearLayout
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_130"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="@dimen/w_254"
+            android:layout_height="@dimen/h_76"
+            android:text="@string/agree"
+            android:textSize="@dimen/w_42"
+            android:textColor="#fff"
+            android:background="@drawable/dialog_bg_selector"
+            />
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="@dimen/w_254"
+            android:layout_height="@dimen/h_76"
+            android:text="@string/disagree"
+            android:textSize="@dimen/w_42"
+            android:background="@drawable/dialog_bg_selector"
+            android:layout_marginLeft="@dimen/w_190"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

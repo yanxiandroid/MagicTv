@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/ll_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#c0212123"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/h_50"
+        android:paddingTop="@dimen/h_50">
+
+
+        <LinearLayout
+            android:id="@+id/ll_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w_85"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_press"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+
+            <ImageView
+                android:layout_width="@dimen/w_52"
+                android:layout_height="@dimen/h_52"
+                android:layout_marginLeft="@dimen/w_5"
+                android:layout_marginRight="@dimen/w_5"
+                android:src="@drawable/key_choose" />
+
+            <TextView
+                android:id="@+id/tv_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_choose"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w_85"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_press"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+
+            <ImageView
+                android:layout_width="@dimen/w_52"
+                android:layout_height="@dimen/h_52"
+                android:layout_marginLeft="@dimen/w_5"
+                android:layout_marginRight="@dimen/w_5"
+                android:src="@drawable/key_ok" />
+
+            <TextView
+                android:id="@+id/tv_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_enlarge_educe"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_press"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+
+            <ImageView
+                android:layout_width="@dimen/w_52"
+                android:layout_height="@dimen/h_52"
+                android:layout_marginLeft="@dimen/w_5"
+                android:layout_marginRight="@dimen/w_5"
+                android:src="@drawable/key_cancel" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_back"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_36" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/nothing_view"></include>
+
+</RelativeLayout>

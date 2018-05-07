@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1574"
+    android:layout_height="@dimen/h_748"
+    android:background="@drawable/scan_code_pay_back"
+    android:layout_centerInParent="true"
+    >
+
+
+    <FrameLayout
+        android:layout_width="@dimen/w_502"
+        android:layout_height="@dimen/h_502"
+        android:layout_marginLeft="@dimen/w_143"
+        android:layout_marginTop="@dimen/h_157"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/scan_code_alipay_img"
+            android:layout_width="@dimen/w_502"
+            android:layout_height="@dimen/h_502"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="@dimen/w_46"
+            android:layout_height="@dimen/h_46"
+            android:layout_gravity="center"
+            android:src="@drawable/alipay_icon" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="@dimen/w_502"
+        android:layout_height="@dimen/h_502"
+        android:layout_marginRight="@dimen/w_143"
+        android:layout_marginTop="@dimen/h_157"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/scan_code_weixin_img"
+            android:layout_width="@dimen/w_502"
+            android:layout_height="@dimen/h_502"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="@dimen/w_46"
+            android:layout_height="@dimen/h_46"
+            android:layout_gravity="center"
+            android:src="@drawable/weixin_icon" />
+
+    </FrameLayout>
+
+</RelativeLayout>

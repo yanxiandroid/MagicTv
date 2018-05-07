@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1294"
+    android:layout_height="@dimen/h_728"
+    android:background="@drawable/scan_code_login_back"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_238"
+        android:layout_marginTop="@dimen/h_24"
+        android:text="请先扫码登录"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_42" />
+
+
+    <FrameLayout
+        android:layout_width="@dimen/w_558"
+        android:layout_height="@dimen/h_558"
+        android:layout_marginLeft="@dimen/w_82"
+        android:layout_marginTop="@dimen/h_94"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/scan_code_login_img"
+            android:layout_width="@dimen/w_498"
+            android:layout_height="@dimen/h_498"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="@dimen/w_46"
+            android:layout_height="@dimen/h_46"
+            android:layout_gravity="center"
+            android:src="@drawable/weixin_icon" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_142"
+        android:layout_marginTop="@dimen/h_60">
+
+        <TextView
+            android:id="@+id/ti_shi_one_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开微信，点击右上角加号,"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+
+        <TextView
+            android:id="@+id/ti_shi_two_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ti_shi_one_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/h_12"
+            android:text="选择扫一扫扫描左边二维码"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">悦享TV</string>
+    <string name="guide_welcome">欢迎光临</string>
+    <string name="guide_detail">\u3000\u3000欢迎您下榻本酒店，在您入住期间，我们将褐尽所能地以细致周到的服务给您提供温馨舒适的入住体验，让您拥有一段自然自在的美好时光。</string>
+    <string name="guide_dear">尊敬的</string>
+    <string name="general_press">按</string>
+    <string name="general_more">更多</string>
+    <string name="general_enter">进入</string>
+    <string name="general_choose">移动</string>
+    <string name="general_back">返回</string>
+    <string name="general_enlarge_educe">放大/缩小</string>
+    <string name="set_ip">请输入酒店服务器的IP地址</string>
+    <string name="set_room_id">请输入酒店房间号</string>
+    <string name="agree">确认</string>
+    <string name="disagree">取消</string>
+    <string name="hot">热门推荐</string>
+    <string name="pause_play">播放/暂停</string>
+
+
+    <string name="region">地区</string>
+    <string name="director">导演</string>
+    <string name="type">类型</string>
+    <string name="stars">主演</string>
+    <string name="describe">简介</string>
+    <string name="proviewToast">试看5分钟，购买视频后可完整观看。</string>
+    <string name="loading">加载中…</string>
+    <string name="exit_play_toast">您确定要退出正在观看的影片?</string>
+
+
+    <string name="play_timeout">获取视频信息超时,是否继续等待?</string>
+    <string name="play_error">视频加载出错,是否重新加载?</string>
+    <string name="play_net_error">网络异常,是否继续等待?</string>
+    <string name="play_progress_toast">请确认是否继续播放影片？</string>
+    <string name="replay">重新播放</string>
+    <string name="continues">继续播放</string>
+
+    <string name="charge_buy_type">试看结束,购买后可继续观看:</string>
+    <string name="charge_buy_payment">,全部影片任看</string>
+    <string name="charge_buy_payment_food">请选择支付方式:</string>
+    <string name="once_watch">看本片</string>
+    <string name="all_watch">任看</string>
+    <string name="mall_goods_pay_part1">每日</string>
+    <string name="mall_goods_pay_part2">您将支付</string>
+    <string name="charge_pay_all">任看 : 24小时内可观看所有影片</string>
+    <string name="charge_pay_one">看本片 : 24小时内可重复观看此影片</string>
+    <string name="mall_goods_pay_all">,全部影片任看</string>
+    <string name="mall_goods_pay_one">,全部影片任看</string>
+    <string name="alipay">支付宝支付</string>
+    <string name="weixin">微信支付</string>
+    <string name="account_pay">房账支付</string>
+
+
+    <string name="general_add_car">加入购物车</string>
+    <string name="general_enter_car">进入购物车</string>
+    <string name="order_apply">是否提交订单?</string>
+
+    <string name="weather">天气</string>
+    <string name="humi">湿度</string>
+    <string name="wind">风向</string>
+    <string name="quality">空气质量</string>
+
+    <string name="main_music_play">音乐鉴赏</string>
+
+    <string name="notice">提示</string>
+    <string name="notice_detail">线上购买功能暂未开放，请致电酒店前台购买所选择的商品。</string>
+
+    <string name="mobile_scan">安装“悦享TV”APP</string>
+    <string name="mobile_connect">扫码连接电视</string>
+    <string name="mobile_scan_detail">请确认手机已经成功连接房间wifi,然后使用手机浏览器的扫码功能扫描上面的二维码下载“悦享TV”APP</string>
+    <string name="mobile_connect_detail">使用“悦享TV”APP扫描上面的二维码,弹出提示后即连接成功,断开房间wifi后,需重新扫码连接(点击遥控器的菜单键)</string>
+
+    <string name="apply_order">提交订单</string>
+    <string name="clear_order">清空购物车</string>
+    <string name="car_nothing">您还没有选择商品</string>
+    <string name="food_nothing">暂无菜品提供</string>
+    <string name="order_nothing">暂无购买记录</string>
+    <string name="message_nothing">暂无消息记录</string>
+    <string name="phone_nothing">暂无名录</string>
+
+    <string name="account_toast">选择房账支付，费用会在直接记录到您的房账中,是否确认支付？</string>
+    <string name="advert">广告</string>
+
+    <string name="movie_details">影片详情</string>
+    <string name="press_back">按下返回</string>
+    <string name="proview_toast">预览片段,按OK键全屏观看</string>
+    <string name="proview_toast_front">预览片段,按OK键付款</string>
+    <string name="proview_toast_after">元后任看</string>
+    <string name="ad_left">广告还剩余</string>
+    <string name="surplus_time">剩余支付超时时间</string>
+    <string name="surplus_movie">s, 如果已经支付,页面没有跳转,请重新进入视频页面,无需付费。</string>
+    <string name="surplus_food">s ,如果已经支付,页面没有跳转,请退出该页面重新进入。</string>
+
+    <string name="Watch_by_confirmation">按确认观看视频</string>
+
+    <string name="service_items">服务项目</string>
+    <string name="service_phone">服务电话</string>
+
+    <string name="start_end">始/终站</string>
+    <string name="departure_diachronic">发车/历时</string>
+    <string name="vehicle_vehicle">车型/车次</string>
+    <string name="ticket_price">票价</string>
+
+    <string name="no_data">无数据</string>
+</resources>

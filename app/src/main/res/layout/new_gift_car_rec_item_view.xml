@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_332"
+    android:layout_height="@dimen/h_452"
+    android:layout_marginLeft="@dimen/w_12"
+    android:layout_marginRight="@dimen/w_12"
+    android:background="#EBFFFFFF"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/car_rec_item_img"
+        android:layout_width="@dimen/w_326"
+        android:layout_height="@dimen/h_318"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_3"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:id="@+id/car_rec_item_specifications_rl"
+        android:layout_width="@dimen/w_326"
+        android:layout_height="@dimen/h_62"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/car_rec_item_img">
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_326"
+            android:layout_height="@dimen/h_62"
+            android:alpha="0.6"
+            android:background="#232226"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/car_rec_item_specifications_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/w_16"
+            android:layout_marginRight="@dimen/w_16"
+            android:textColor="#ffffff"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="@dimen/w_24" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/car_rec_item_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_rec_item_img"
+        android:layout_marginLeft="@dimen/w_16"
+        android:layout_marginRight="@dimen/w_16"
+        android:layout_marginTop="@dimen/h_21"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#575757"
+        android:textSize="@dimen/w_32" />
+
+
+    <TextView
+        android:id="@+id/car_rec_item_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_rec_item_name_text"
+        android:layout_marginLeft="@dimen/w_16"
+        android:layout_marginTop="@dimen/h_13"
+        android:textColor="#e93a3a"
+        android:textSize="@dimen/w_32" />
+
+    <TextView
+        android:id="@+id/car_rec_item_num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/car_rec_item_price_text"
+        android:layout_below="@+id/car_rec_item_name_text"
+        android:layout_marginLeft="@dimen/w_15"
+        android:layout_marginTop="@dimen/h_21"
+        android:layout_toRightOf="@+id/car_rec_item_price_text"
+        android:alpha="0.8"
+        android:textColor="#575757"
+        android:textSize="@dimen/w_24" />
+
+    <ImageView
+        android:layout_width="@dimen/w_326"
+        android:layout_height="@dimen/h_318"
+        android:src="@drawable/gift_buy_grid_item_back_top" />
+</RelativeLayout>

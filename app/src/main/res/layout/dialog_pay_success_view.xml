@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1042"
+    android:gravity="center"
+    android:layout_height="@dimen/h_652">
+
+    <ImageView
+        android:layout_width="@dimen/w_1042"
+        android:layout_height="@dimen/h_652"
+        android:src="@drawable/pay_success_back" />
+
+    <TextView
+        android:id="@+id/pay_money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成功支付:"
+        android:layout_marginTop="@dimen/h_234"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff8f40"
+        android:textSize="@dimen/w_58" />
+
+    <TextView
+        android:id="@+id/pay_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1298元"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_20"
+        android:layout_below="@+id/pay_money_text"
+        android:textColor="#ff8f40"
+        android:textSize="@dimen/w_58" />
+
+    <TextView
+        android:id="@+id/pay_sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_52"
+        android:layout_marginTop="@dimen/h_55"
+        android:layout_below="@+id/pay_money"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:focusable="true"
+        android:layout_height="wrap_content"
+        android:text="点击确认" />
+
+</RelativeLayout>

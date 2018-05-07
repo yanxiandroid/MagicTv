@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="guide_week">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+
+    <string-array name="main_fragment_tab">
+        <item>0</item>
+        <item>0</item>
+        <item>酒店影院</item>
+        <item>音乐鉴赏</item>
+        <item>电视直播</item>
+        <item>天气预报</item>
+        <item>酒店服务</item>
+        <item>酒店商城</item>
+        <item>客房点餐</item>
+        <item>酒店周边</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="menu_tab">
+        <item>&#x0020;</item>
+        <item>&#x0020;</item>
+        <item>购物车</item>
+        <item>多屏互动</item>
+        <item>房账清单</item>
+        <item>关于</item>
+        <item>&#x0020;</item>
+        <item>&#x0020;</item>
+        <!-- <item>购物车</item>-->
+    </string-array>
+
+    <string-array name="hotel_service_list">
+        <item>酒店消息</item>
+        <item>酒店介绍</item>
+        <item>礼宾服务</item>
+        <item>康乐服务</item>
+        <item>会务服务</item>
+        <item>客房服务</item>
+    </string-array>
+
+    <string-array name="near_list">
+        <item>大巴时刻表</item>
+        <item>地铁线路图</item>
+        <item>周边景点</item>
+        <item>周边餐饮</item>
+        <item>周边商城</item>
+        <item>周边特产</item>
+    </string-array>
+</resources>

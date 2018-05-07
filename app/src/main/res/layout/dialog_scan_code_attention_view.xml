@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1294"
+    android:layout_height="@dimen/h_728"
+    android:background="@drawable/scan_code_attention_back"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/scan_code_attention_img"
+        android:layout_width="@dimen/w_498"
+        android:layout_height="@dimen/h_498"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/w_82"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mall_qrcode" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_142"
+        android:layout_marginTop="@dimen/h_60">
+
+        <TextView
+            android:id="@+id/ti_shi_one_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您可以扫码关注酒店商城，"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+
+        <TextView
+            android:id="@+id/ti_shi_two_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ti_shi_one_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/h_12"
+            android:text="随时查看购物信息."
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_28" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

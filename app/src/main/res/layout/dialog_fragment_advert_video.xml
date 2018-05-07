@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1920"
+    android:layout_height="@dimen/h_1080"
+    android:paddingBottom="@dimen/h_204"
+    android:background="#66000000"
+    >
+
+    <FrameLayout
+        android:layout_width="@dimen/w_1120"
+        android:layout_height="@dimen/h_630"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_186">
+
+        <ImageView
+            android:id="@+id/iv_advert1"
+            android:layout_width="@dimen/w_1120"
+            android:layout_height="@dimen/h_630"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/iv_advert2"
+            android:layout_width="@dimen/w_1120"
+            android:layout_height="@dimen/h_630"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_advert_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="@dimen/h_50"
+            android:layout_marginRight="@dimen/w_50"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_pause"
+        android:layout_width="@dimen/w_166"
+        android:layout_height="@dimen/h_166"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/w_116"
+        android:src="@drawable/pause_icon"
+        android:visibility="visible" />
+
+</RelativeLayout>

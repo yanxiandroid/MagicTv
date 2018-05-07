@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--VerticalScrollTextView-->
+    <declare-styleable name="VerticalScrollTextView">
+        <attr name="VerticalScrollTextView_lineNum" format="integer" />
+        <attr name="VerticalScrollTextView_textSize" format="dimension" />
+        <attr name="VerticalScrollTextView_line" format="dimension" />
+        <attr name="VerticalScrollTextView_textColor" format="color" />
+        <attr name="VerticalScrollTextView_lineSpacingMultiplier" format="float" />
+    </declare-styleable>
+
+</resources>

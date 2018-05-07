@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1800"
+    android:layout_height="@dimen/h_558"
+    android:alpha="0.8"
+    android:background="#19191d">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_20">
+
+        <TextView
+            android:layout_width="@dimen/w_650"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/w_100"
+            android:text="@string/start_end"
+            android:textColor="#DFCC92"
+            android:textSize="@dimen/w_46" />
+
+        <TextView
+            android:layout_width="@dimen/w_450"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/w_80"
+            android:text="@string/departure_diachronic"
+            android:textColor="#DFCC92"
+            android:textSize="@dimen/w_46" />
+
+        <TextView
+            android:layout_width="@dimen/w_400"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/w_80"
+            android:text="@string/vehicle_vehicle"
+            android:textColor="#DFCC92"
+            android:textSize="@dimen/w_46" />
+
+        <TextView
+            android:layout_width="@dimen/w_350"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/w_100"
+            android:text="@string/ticket_price"
+            android:textColor="#DFCC92"
+            android:textSize="@dimen/w_46" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="@dimen/w_1850"
+        android:layout_height="@dimen/h_380"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginTop="@dimen/h_30" />
+
+    <TextView
+        android:id="@+id/tv_bus_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_pager"
+        android:layout_marginRight="@dimen/w_56"
+        android:alpha="0.5"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_34" />
+
+    <include layout="@layout/nothing_view" />
+
+</RelativeLayout>

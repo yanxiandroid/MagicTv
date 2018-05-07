@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="@dimen/h_382"
+    android:layout_height="@dimen/h_140"
+    android:layout_alignParentBottom="true"
+    android:layout_marginRight="@dimen/w_2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/h_382"
+        android:layout_height="match_parent"
+        android:background="#e692876c"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/w_78"
+        android:layout_height="@dimen/h_78"
+        android:layout_marginLeft="@dimen/w_16"
+        android:src="@drawable/main_title_food"
+        android:layout_marginTop="@dimen/h_7"
+         />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_24"
+        android:textColor="#7FFFFFFF"
+        android:text="酒店影院"
+        android:layout_marginBottom="@dimen/h_20"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/w_32" />
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/w_800"
+        android:layout_height="match_parent"
+        android:background="@drawable/keybroad_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="@dimen/w_624"
+            android:layout_height="@dimen/h_84"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/h_100"
+            android:background="@drawable/search_bg"
+            android:focusable="false"
+            android:hint="请输入片名首字母"
+            android:paddingLeft="@dimen/w_30"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="@dimen/w_32" />
+
+        <com.open.androidtvwidget.view.GridViewTV
+            android:id="@+id/gridView"
+            android:layout_width="@dimen/w_800"
+            android:layout_height="@dimen/h_685"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/h_26"
+            android:focusable="true"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="6"
+            android:paddingLeft="@dimen/w_40"
+            android:paddingRight="@dimen/w_40"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_remove"
+                android:layout_width="@dimen/w_312"
+                android:layout_height="@dimen/h_112"
+                android:layout_marginLeft="@dimen/w_64"
+                android:background="@drawable/search_bt_selector"
+                android:text="删除"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:layout_width="@dimen/w_312"
+                android:layout_height="@dimen/h_112"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/w_64"
+                android:background="@drawable/search_bt_selector"
+                android:text="清除"
+                android:textColor="#fff"
+                android:textSize="@dimen/w_42" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yht.iptv.widget.CustomListViewTv
+            android:id="@+id/listview"
+            android:layout_width="@dimen/w_749"
+            android:layout_height="@dimen/h_955"
+            android:layout_marginLeft="@dimen/w_58"
+            android:layout_marginTop="@dimen/h_50"
+            android:layout_weight="1"
+            android:divider="#4cffffff"
+            android:dividerHeight="@dimen/h_1"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+    <com.open.androidtvwidget.view.MainUpView
+        android:id="@+id/mainUpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

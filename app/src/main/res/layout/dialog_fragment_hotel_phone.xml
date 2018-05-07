@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1800"
+    android:layout_height="@dimen/h_558"
+    android:alpha="0.8"
+    android:background="#19191d">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_20">
+
+        <TextView
+            android:layout_width="@dimen/w_450"
+            android:layout_height="wrap_content"
+            android:text="@string/service_items"
+            android:gravity="left"
+            android:paddingLeft="@dimen/w_100"
+            android:textColor="#DFCC92"
+            android:textSize="@dimen/w_46"
+            />
+        <TextView
+            android:layout_width="@dimen/w_450"
+            android:layout_height="wrap_content"
+            android:text="@string/service_phone"
+            android:gravity="left"
+            android:paddingLeft="@dimen/w_100"
+            android:textColor="#DFCC92"
+            android:textSize="@dimen/w_46"
+            />
+        <TextView
+            android:layout_width="@dimen/w_450"
+            android:layout_height="wrap_content"
+            android:text="@string/service_items"
+            android:gravity="left"
+            android:textColor="#DFCC92"
+            android:paddingLeft="@dimen/w_100"
+            android:textSize="@dimen/w_46"
+            />
+        <TextView
+            android:layout_width="@dimen/w_450"
+            android:layout_height="wrap_content"
+            android:text="@string/service_phone"
+            android:paddingLeft="@dimen/w_100"
+            android:gravity="left"
+            android:textColor="#DFCC92"
+            android:textSize="@dimen/w_46"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/line_view"
+        android:layout_width="@dimen/w_2"
+        android:layout_height="@dimen/h_480"
+        android:layout_marginTop="@dimen/h_54"
+        android:layout_marginBottom="@dimen/h_54"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.2"
+        android:visibility="visible"
+        android:background="#ffffff" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="@dimen/w_1800"
+        android:layout_height="@dimen/h_380"
+        android:layout_marginTop="@dimen/h_30"
+        android:layout_below="@+id/ll_title"
+        />
+
+    <TextView
+        android:id="@+id/tv_goods_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_56"
+        android:layout_below="@+id/view_pager"
+        android:alpha="0.5"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_34" />
+    <include layout="@layout/nothing_view"/>
+
+</RelativeLayout>

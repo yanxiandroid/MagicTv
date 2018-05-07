@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/w_1920"
+        android:layout_height="@dimen/h_1080"
+        />
+
+    <include
+        android:id="@+id/hotel_title_view"
+        layout="@layout/hotel_general_title" />
+
+    <FrameLayout
+        android:layout_width="@dimen/w_588"
+        android:layout_height="@dimen/h_588"
+        android:layout_marginTop="@dimen/h_300"
+        android:layout_marginLeft="@dimen/w_230"
+        >
+        <ImageView
+            android:id="@+id/iv_music_play"
+            android:layout_width="@dimen/w_588"
+            android:layout_height="@dimen/h_588"
+            android:background="@drawable/music_play_icon"
+            />
+
+        <ImageView
+            android:id="@+id/iv_advert"
+            android:layout_width="@dimen/w_412"
+            android:layout_height="@dimen/h_412"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@color/transparent"
+            android:background="#00000000"
+            />
+
+        <ImageView
+            android:id="@+id/iv_advert2"
+            android:layout_width="@dimen/w_412"
+            android:layout_height="@dimen/h_412"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@color/transparent"
+            android:background="#00000000"
+            />
+
+        <TextView
+            android:id="@+id/tv_advert_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h_120"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_20"
+            android:layout_gravity="center_horizontal|bottom"
+            android:visibility="invisible"
+            />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_music_play_status"
+        android:layout_width="@dimen/w_266"
+        android:layout_height="@dimen/h_578"
+        android:layout_marginTop="@dimen/h_282"
+        android:layout_marginLeft="@dimen/w_608"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="@dimen/w_1408"
+        android:layout_height="@dimen/h_80"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_148"
+        app:tabMode="scrollable" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        android:layout_marginLeft="@dimen/w_1074"
+        android:layout_marginTop="@dimen/h_50"
+        android:layout_marginBottom="@dimen/h_176"
+       />
+
+    <include
+        android:id="@+id/ll_toast"
+        layout="@layout/general_down_info" />
+
+
+</RelativeLayout>

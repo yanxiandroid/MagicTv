@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="@dimen/w_783"
+        android:layout_height="@dimen/h_68"
+        >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/w_76"
+            android:layout_height="@dimen/h_68"
+            />
+
+        <TextView
+            android:id="@+id/tv_music_name"
+            android:layout_width="@dimen/w_500"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/w_36"
+            android:layout_marginLeft="@dimen/w_104"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            />
+
+
+        
+
+    </RelativeLayout>
+
+
+</LinearLayout>

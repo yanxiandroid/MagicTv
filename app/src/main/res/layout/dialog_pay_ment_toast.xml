@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.open.androidtvwidget.view.RelativeMainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1920"
+    android:layout_height="@dimen/w_1080"
+    android:background="#90000000"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/charge_buy_price"
+        android:layout_width="@dimen/w_1750"
+        android:layout_height="@dimen/h_90"
+        android:lineSpacingExtra="@dimen/h_10"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="Everyday payment ￥8.0 for watching all movies in 24h"
+        android:textSize="@dimen/w_52" />
+
+    <TextView
+        android:id="@+id/charge_buy_payment"
+        android:layout_width="@dimen/w_800"
+        android:layout_height="@dimen/h_90"
+        android:lineSpacingExtra="@dimen/h_10"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/charge_buy_price"
+        android:text="请选择支付方式:"
+        android:textSize="@dimen/w_52" />
+
+
+    <LinearLayout
+        android:id="@+id/charge_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_buy_payment"
+        android:layout_marginTop="@dimen/h_92"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/charge_account_tn"
+            android:layout_width="@dimen/w_310"
+            android:layout_height="@dimen/h_108"
+            android:background="@drawable/pay_back_account"
+            android:gravity="center"
+            android:text="@string/account_pay"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_48" />
+
+        <Button
+            android:id="@+id/charge_weixin_tn"
+            android:layout_width="@dimen/w_310"
+            android:layout_height="@dimen/h_108"
+            android:layout_marginLeft="@dimen/w_84"
+            android:background="@drawable/pay_back_two"
+            android:gravity="center"
+            android:text="@string/weixin"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_48" />
+
+        <Button
+            android:id="@+id/charge_alipay_tn"
+            android:layout_width="@dimen/w_310"
+            android:layout_height="@dimen/h_108"
+            android:background="@drawable/pay_back_one"
+            android:gravity="center"
+            android:text="@string/alipay"
+            android:layout_marginLeft="@dimen/w_84"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_48" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mall_goods_pay_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_ll"
+        android:layout_marginTop="@dimen/h_96"
+        android:alpha="0.5"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_36" />
+
+
+    <TextView
+        android:id="@+id/mall_goods_pay_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mall_goods_pay_one"
+        android:layout_marginTop="@dimen/h_36"
+        android:alpha="0.5"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_36" />
+
+
+</com.open.androidtvwidget.view.RelativeMainLayout>

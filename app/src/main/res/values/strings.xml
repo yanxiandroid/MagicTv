@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">MagicTV</string>
+    <string name="guide_welcome">Welcome</string>
+    <string name="guide_detail">\u3000 Welcome to our hotel. During your stay,we will do our best with meticulous and thoughtful service to provide warm and comfortable experience for you. Make sure that you have a natural and wonderful time.</string>
+    <string name="guide_dear">Dear</string>
+    <string name="general_press"> </string>
+    <string name="general_more">More</string>
+    <string name="general_enter">Enter</string>
+    <string name="general_choose">Move</string>
+    <string name="general_back">Back</string>
+    <string name="general_enlarge_educe">Enlarge/Reduce</string>
+    <string name="set_ip">请输入酒店服务器的IP地址</string>
+    <string name="set_room_id">请输入酒店房间号</string>
+    <string name="agree">OK</string>
+    <string name="disagree">Cancel</string>
+    <string name="hot">Hot</string>
+    <string name="pause_play">Play/Pause</string>
+
+
+    <string name="region">Region</string>
+    <string name="director">Director</string>
+    <string name="type">Type</string>
+    <string name="stars">Actors</string>
+    <string name="describe">Description</string>
+    <string name="proviewToast">Preview 5min and pay for the complete movie.</string>
+    <string name="loading">Loading…</string>
+    <string name="exit_play_toast">Confirm to exit the movie?</string>
+
+    <string name="play_timeout">Time out,Continue?</string>
+    <string name="play_error">Video load failed. Reload or not??</string>
+    <string name="play_net_error">Network is abnormal.Wait or not?</string>
+    <string name="play_progress_toast">Confirm to continue watch the movie?</string>
+    <string name="replay">Replay</string>
+    <string name="continues">continue</string>
+
+
+    <string name="charge_buy_type">Preview end,Pay continue:</string>
+    <string name="charge_buy_payment">for watching all movies in 24h</string>
+    <string name="charge_buy_payment_food">Choose payment :</string>
+    <string name="once_watch">/Movie</string>
+    <string name="all_watch">/Day</string>
+    <string name="mall_goods_pay_part1">Everyday payment </string>
+    <string name="mall_goods_pay_part2">Payment </string>
+    <string name="mall_goods_pay_all"> for watching all movies in 24h</string>
+    <string name="mall_goods_pay_one"> for watching this movie in 24h</string>
+    <string name="charge_pay_all">Movie : for watching all movies in 24h</string>
+    <string name="charge_pay_one">Day : for watching this movie in 24h</string>
+    <string name="alipay">AliPay</string>
+    <string name="weixin">WeChatPay</string>
+    <string name="account_pay">AccountPay</string>
+
+
+    <string name="general_add_car">Add Shopping</string>
+    <string name="general_enter_car">Enter shopping</string>
+    <string name="order_apply">Are you apply order?</string>
+
+    <string name="weather">Weather</string>
+    <string name="humi">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="quality">AQ</string>
+
+    <string name="main_music_play">Music</string>
+
+    <string name="notice">Notice</string>
+    <string name="notice_detail">Online purchase function is not offered in temporary, please call front-desk asking for help.</string>
+
+    <string name="mobile_scan">Install MagicTV APP</string>
+    <string name="mobile_connect">Connect to TV</string>
+    <string name="mobile_scan_detail">Make sure your mobile phone has been connected to the Room-WIFI successfully,then scan the left code in browser to download MagicTV APP.</string>
+    <string name="mobile_connect_detail">Scan the right code in MagicTV APP.If disconnect from the Room-Wifi,you need to scan again.</string>
+
+    <string name="apply_order">apply</string>
+    <string name="clear_order">clear</string>
+    <string name="car_nothing">You have not selected any items yet</string>
+    <string name="food_nothing">No food available</string>
+    <string name="order_nothing">No record of purchase</string>
+    <string name="message_nothing">No news record</string>
+    <string name="phone_nothing">No PhoneNumber</string>
+
+    <string name="account_toast">Choose the room account payment, the cost will be recorded directly to your room account, do you confirm the payment?</string>
+
+    <string name="advert">Adverts</string>
+
+    <string name="movie_details">Movie details</string>
+    <string name="press_back">Press back</string>
+    <string name="proview_toast">Preview fragment, watch the full screen of OK key</string>
+    <string name="proview_toast_front"></string>
+    <string name="proview_toast_after">Preview, press the OK button to see after the payment of ￥</string>
+    <string name="ad_left">The ad is still left </string>
+    <string name="surplus_time">Surplus payment time </string>
+    <string name="surplus_movie">s, If you have already paid, the page does not jump, please reenter the video page without paying.</string>
+    <string name="surplus_food">s ,If you have already paid, the page does not jump, please exit the page and reenter.</string>
+
+    <string name="Watch_by_confirmation">Watch video by OK</string>
+
+    <string name="service_items">Service Items</string>
+    <string name="service_phone">Service Phone</string>
+
+    <string name="start_end">Start/End</string>
+    <string name="departure_diachronic">Depart/Duration</string>
+    <string name="vehicle_vehicle">Vehicle</string>
+    <string name="ticket_price">Price</string>
+
+    <string name="no_data">No Data</string>
+</resources>

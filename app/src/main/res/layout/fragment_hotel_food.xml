@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000">
+
+    <ImageView
+        android:id="@+id/hotel_food_order_icon"
+        android:layout_width="@dimen/w_52"
+        android:layout_height="@dimen/h_42"
+        android:layout_marginLeft="@dimen/w_82"
+        android:layout_marginTop="@dimen/h_74"
+        android:src="@drawable/hotel_food_order_icon" />
+
+    <ImageView
+        android:id="@+id/hotel_food_up"
+        android:layout_width="@dimen/w_43"
+        android:layout_height="@dimen/h_19"
+        android:layout_marginLeft="@dimen/w_142"
+        android:layout_marginTop="@dimen/h_33"
+        android:src="@drawable/hotel_food_up_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hotel_food_type_text"
+        android:layout_width="@dimen/w_200"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_16"
+        android:layout_marginTop="@dimen/h_70"
+        android:layout_toRightOf="@+id/hotel_food_order_icon"
+        android:gravity="start"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_42" />
+
+    <ImageView
+        android:id="@+id/hotel_food_down"
+        android:layout_width="@dimen/w_43"
+        android:layout_height="@dimen/h_19"
+        android:layout_below="@+id/hotel_food_type_text"
+        android:layout_marginLeft="@dimen/w_142"
+        android:layout_marginTop="@dimen/h_16"
+        android:src="@drawable/hotel_food_down_icon" />
+
+
+    <RelativeLayout
+        android:id="@+id/view_pager_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_676"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_84"
+        android:clipChildren="false">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="@dimen/w_1200"
+            android:layout_height="@dimen/h_676"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="@dimen/w_516"
+        android:layout_height="@dimen/h_152"
+        android:layout_marginLeft="@dimen/w_292"
+        android:layout_marginTop="@dimen/h_122"
+        android:background="@drawable/hotel_food_name_bg">
+
+
+        <TextView
+            android:id="@+id/hotel_food_name"
+            android:layout_width="@dimen/w_440"
+            android:layout_height="@dimen/h_98"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="#57576d"
+            android:textSize="@dimen/w_42" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/w_200"
+        android:layout_height="@dimen/h_48"
+        android:layout_marginLeft="@dimen/w_531"
+        android:layout_marginTop="@dimen/h_220"
+        android:background="#7530303a">
+
+        <TextView
+            android:id="@+id/hotel_food_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_48"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/w_10"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/w_32" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_pager_ll"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/w_32"
+        android:layout_marginRight="@dimen/w_248"
+        android:alpha="0.5">
+
+        <TextView
+            android:id="@+id/hotel_food_current_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/h_3"
+            android:gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="@dimen/w_36" />
+
+        <TextView
+            android:id="@+id/hotel_food_total_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hotel_food_current_num"
+            android:gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="@dimen/w_36" />
+
+    </RelativeLayout>
+
+    <com.yht.iptv.tools.VerticalScrollTextView
+        android:id="@+id/hotel_food_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_120"
+        android:layout_below="@+id/view_pager_ll"
+        android:layout_marginLeft="@dimen/w_360"
+        android:layout_marginRight="@dimen/w_360"
+        android:layout_marginTop="@dimen/h_38"
+        app:VerticalScrollTextView_lineNum="42"
+        app:VerticalScrollTextView_lineSpacingMultiplier="1.4"
+        app:VerticalScrollTextView_textColor="@color/white"
+        app:VerticalScrollTextView_textSize="@dimen/w_28" />
+
+    <include layout="@layout/nothing_view"></include>
+</RelativeLayout>

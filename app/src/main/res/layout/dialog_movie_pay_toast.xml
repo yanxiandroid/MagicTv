@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1920"
+    android:layout_height="@dimen/h_1080"
+    android:background="#F2333335">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/w_330"
+        android:layout_marginRight="@dimen/w_330"
+        android:layout_marginTop="@dimen/h_60"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_56" />
+
+    <include
+        android:id="@+id/rl_qrcode"
+        layout="@layout/dialog_scan_code_pay_view"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_room_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/w_200"
+                android:layout_height="@dimen/h_200"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mall_goods_pay_cyc_shape" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="@dimen/w_200"
+                android:layout_height="@dimen/h_200"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/w_64"
+                android:gravity="center"
+                android:text="20元"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/w_60" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="@dimen/w_143"
+                android:layout_height="@dimen/h_94"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_price"
+                android:src="@drawable/mall_goods_pay_room_arrow" />
+
+            <ImageView
+                android:layout_width="@dimen/w_474"
+                android:layout_height="@dimen/h_416"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_arrow"
+                android:src="@drawable/mall_goods_pay_room_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_room_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_room"
+            android:layout_marginTop="@dimen/h_46"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/w_330"
+            android:paddingRight="@dimen/w_340"
+            android:text="支付的费用：20元，将会计入房账清单中，您退房时将一并支付，按OK键确认支付"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_42" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/h_40"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_pay_net"
+            android:layout_width="@dimen/w_300"
+            android:layout_height="@dimen/h_80"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="手机支付"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_50" />
+
+        <TextView
+            android:id="@+id/tv_pay_loc"
+            android:layout_width="@dimen/w_300"
+            android:layout_height="@dimen/h_80"
+            android:layout_marginLeft="@dimen/w_200"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="房账支付"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_50" />
+
+
+    </LinearLayout>
+</RelativeLayout>

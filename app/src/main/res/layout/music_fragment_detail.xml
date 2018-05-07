@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yht.iptv.tools.MusicListView
+        android:id="@+id/music_list"
+        android:layout_width="@dimen/w_783"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:listSelector="@drawable/music_focus_selector"
+        />
+
+</LinearLayout>

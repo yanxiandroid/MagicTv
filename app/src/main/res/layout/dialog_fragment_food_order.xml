@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1800"
+    android:layout_height="@dimen/h_558"
+    android:alpha="0.8"
+    android:background="#19191d">
+
+
+    <!--
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="@dimen/w_742"
+            android:layout_height="@dimen/h_450"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/w_280"
+            android:text="无订单"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_36"
+            android:visibility="gone" />
+    -->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="@dimen/w_678"
+        android:layout_height="@dimen/h_450"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/w_32"
+        android:layout_marginRight="@dimen/w_32"
+        android:divider="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/line_view"
+        android:layout_width="@dimen/w_2"
+        android:layout_height="@dimen/h_480"
+        android:layout_marginTop="@dimen/h_54"
+        android:layout_toRightOf="@+id/listview"
+        android:alpha="0.2"
+        android:visibility="gone"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_goods_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_56"
+        android:layout_marginTop="@dimen/h_70"
+        android:layout_toRightOf="@+id/line_view"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_34" />
+
+    <TextView
+        android:id="@+id/tv_goods_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_56"
+        android:layout_marginTop="@dimen/h_70"
+        android:alpha="0.5"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_34" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="@dimen/w_946"
+        android:layout_height="@dimen/h_320"
+        android:layout_below="@+id/tv_goods_page"
+        android:layout_marginLeft="@dimen/w_56"
+        android:layout_marginRight="@dimen/w_56"
+        android:layout_marginTop="@dimen/h_10"
+        android:layout_toRightOf="@+id/line_view" />
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_56"
+        android:layout_marginTop="@dimen/h_450"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_36" />
+
+
+    <include layout="@layout/nothing_view"/>
+
+</RelativeLayout>

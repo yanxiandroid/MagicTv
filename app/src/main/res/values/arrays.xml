@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="guide_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="main_fragment_tab">
+        <item>0</item>
+        <item>0</item>
+        <item>Movie</item>
+        <item>Music</item>
+        <item>TV</item>
+        <item>Weather</item>
+        <item>Service</item>
+        <item>Shopping</item>
+        <item>Catering</item>
+        <item>Near</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+
+    <string-array name="menu_tab">
+        <item>&#x0020;</item>
+        <item>&#x0020;</item>
+        <item>Shopping</item>
+        <item>Multi-Screen</item>
+        <item>Checklist</item>
+        <item>About</item>
+        <item>&#x0020;</item>
+        <item>&#x0020;</item>
+        <!-- <item>购物车</item>-->
+    </string-array>
+
+    <string-array name="hotel_service_list">
+        <item>Message</item>
+        <item>Hotel Introduction</item>
+        <item>Concierge Service</item>
+        <item>Recreation Service</item>
+        <item>Predetermined Service</item>
+        <item>Room Service</item>
+        <!-- <item>购物车</item>-->
+    </string-array>
+
+    <string-array name="near_list">
+        <item>Bus Timetable</item>
+        <item>Metro Map</item>
+        <item>Surrounding Scenic Spots</item>
+        <item>Surrounding Food</item>
+        <item>Surrounding Mall</item>
+        <item>Surrounding Specialty</item>
+    </string-array>
+
+</resources>

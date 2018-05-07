@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_234"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.88"
+        android:src="#000000"
+        />
+    
+    <ImageView
+        android:layout_width="@dimen/w_434"
+        android:layout_height="@dimen/h_100"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/hotel_general_icon"
+        android:layout_marginBottom="@dimen/h_174"
+        android:layout_marginLeft="@dimen/w_170"
+        />
+    
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/w_320"
+        android:layout_height="wrap_content"
+        android:textColor="#e1c990"
+        android:textSize="@dimen/w_44"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginLeft="@dimen/w_220"
+        android:layout_marginBottom="@dimen/h_215"
+        />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="@dimen/w_36"
+        android:layout_marginBottom="@dimen/h_40"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="3"
+        android:layout_marginLeft="@dimen/w_136"
+        android:layout_marginRight="@dimen/w_136"
+        android:layout_alignTop="@+id/iv_bg"
+        android:layout_marginTop="@dimen/h_60"
+        />
+    
+    <ImageView
+        android:id="@+id/iv_left_arrow"
+        android:layout_width="@dimen/w_86"
+        android:layout_height="@dimen/h_138"
+        android:src="@drawable/hotel_general_left_arrow"
+        android:layout_marginLeft="@dimen/w_50"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_right_arrow"
+        android:layout_width="@dimen/w_86"
+        android:layout_height="@dimen/h_138"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_50"
+        android:layout_centerVertical="true"
+        android:src="@drawable/hotel_general_right_arrow"
+        />
+
+    <TextView
+        android:id="@+id/tv_page"
+        android:layout_width="@dimen/w_106"
+        android:layout_height="@dimen/h_48"
+        android:background="#E1000000"
+        android:textColor="#fff"
+        android:layout_marginTop="@dimen/h_20"
+        android:gravity="center"
+        android:text="11/12"
+        android:textSize="@dimen/w_32"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_20"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_play"
+        android:layout_width="@dimen/w_252"
+        android:layout_height="@dimen/h_48"
+        android:text="@string/Watch_by_confirmation"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/h_20"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_32"
+        android:background="#E1000000"
+        android:layout_toLeftOf="@+id/tv_page"
+        android:layout_marginRight="@dimen/w_18"
+
+        />
+
+</RelativeLayout>

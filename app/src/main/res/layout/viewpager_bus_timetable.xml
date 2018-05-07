@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yht.iptv.tools.CustomListViewTv
+        android:id="@+id/listViewTv"
+        android:layout_width="@dimen/w_1850"
+        android:layout_height="match_parent"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:focusable="true"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>

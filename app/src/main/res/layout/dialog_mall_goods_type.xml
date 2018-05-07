@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_578"
+    android:layout_height="@dimen/h_344"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/mall_goods_type_dialog_bg">
+
+    <TextView
+        android:id="@+id/tv_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#cc575757"
+        android:layout_marginLeft="@dimen/w_82"
+        android:layout_marginTop="@dimen/h_42"/>
+
+    <com.owen.tvrecyclerview.widget.TvRecyclerView
+        android:id="@+id/tr_type1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_60"
+        android:layout_marginTop="@dimen/h_12"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/w_82"
+        android:layout_marginRight="@dimen/w_48"
+        app:tv_layoutManager="ListLayoutManager"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#cc575757"
+        android:layout_marginLeft="@dimen/w_82"
+        android:layout_marginTop="@dimen/h_30"/>
+
+    <com.owen.tvrecyclerview.widget.TvRecyclerView
+        android:id="@+id/tr_type2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_60"
+        android:layout_marginTop="@dimen/h_12"
+        android:layout_marginLeft="@dimen/w_82"
+        android:layout_marginRight="@dimen/w_48"
+        android:orientation="horizontal"
+        app:tv_layoutManager="ListLayoutManager"
+        />
+
+    <com.open.androidtvwidget.view.MainUpView
+        android:id="@+id/mainUpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏id -->
+    <item type="id"  name="title_bar1" />
+    <item type="id"  name="title_bar2" />
+    <item type="id"  name="title_bar3" />
+    <item type="id"  name="title_bar4" />
+
+    <!--集数最开始按钮id-->
+    <item type="id"  name="media_detail_bt_number_collection"/>
+    <item type="id"  name="media_detail_bt_numbers"/>
+
+    <item type="id"  name="ll_button_select"/>
+    <item type="id"  name="tv_select"/>
+
+</resources>

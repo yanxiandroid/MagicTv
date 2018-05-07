@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="mall_goods_pay">#ffb340</color>
+    <color name="car_price_preselected">#10ffffff</color>
+    <color name="car_price_selected">#70f53131</color>
+    <color name="car_num_preselected">#50ffffff</color>
+    <color name="car_dialog">#92292a2e</color>
+
+    <color name="mall_goods_buy">#ebe6de</color>
+    <color name="mall_goods_buy_selected">#f3c073</color>
+    <color name="mall_goods_detail_selected">#e6e6c996</color>
+
+    <color name="seekbar_bg">#10ffff00</color>
+    <color name="seekbar_second_bg">#50ffb340</color>
+    <color name="seekbar_first_bg">#ffb340</color>
+    <color name="seekbar_thumb">#ffff00</color>
+
+</resources>

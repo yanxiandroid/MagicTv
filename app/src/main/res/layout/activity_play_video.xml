@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:id="@+id/VideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/tv_pay_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/h_100"
+        android:layout_marginLeft="@dimen/w_100"
+        android:background="@drawable/movie_pay_watch_bg_shape"
+        android:paddingBottom="@dimen/h_10"
+        android:paddingLeft="@dimen/w_30"
+        android:paddingRight="@dimen/w_30"
+        android:paddingTop="@dimen/h_10"
+        android:text="@string/proviewToast"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_36"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/LoadingView"
+        layout="@layout/progress_view"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_464"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_116"
+            android:layout_marginTop="@dimen/h_40"
+            android:text="选集"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_32" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_pause"
+        android:layout_width="@dimen/w_166"
+        android:layout_height="@dimen/h_166"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/w_116"
+        android:layout_marginBottom="@dimen/h_204"
+        android:src="@drawable/pause_icon"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_video_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_100"
+        android:layout_alignParentTop="true"
+        android:background="#CC000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_videoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/w_30"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_40" />
+
+        <TextView
+            android:id="@+id/tv_currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/w_30"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_40" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@id/tv_advert_msg"
+        android:layout_width="@dimen/w_300"
+        android:layout_height="@dimen/h_50"
+        android:text="广告剩余15s"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="@dimen/w_30"
+        android:background="#66000000"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/h_50"
+        android:layout_marginRight="@dimen/w_50"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

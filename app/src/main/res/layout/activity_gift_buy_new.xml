@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_gift_buy_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/w_1920"
+        android:layout_height="@dimen/h_1080"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_116"
+        android:alpha="0.35"
+        android:background="#27262f"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_116"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/w_31"
+            android:layout_height="@dimen/h_42"
+            android:layout_marginRight="@dimen/w_32"
+            android:src="@drawable/activity_gift_buy_left" />
+
+        <TextView
+            android:id="@+id/activity_gift_buy_hotel_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒店商城"
+            android:textColor="#ffd699"
+            android:textSize="@dimen/w_48" />
+
+        <ImageView
+            android:layout_width="@dimen/w_31"
+            android:layout_height="@dimen/h_42"
+            android:layout_marginLeft="@dimen/w_32"
+            android:src="@drawable/activity_gift_buy_right" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/left_rl"
+        android:layout_width="@dimen/w_388"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/activity_gift_buy_search_img"
+            android:layout_width="@dimen/w_52"
+            android:layout_height="@dimen/h_52"
+            android:layout_marginLeft="@dimen/w_42"
+            android:layout_marginTop="@dimen/h_28"
+            android:focusable="true"
+            android:src="@drawable/activity_gift_buy_search" />
+
+        <ImageView
+            android:id="@+id/activity_gift_buy_shopping_cart_img"
+            android:layout_width="@dimen/w_52"
+            android:layout_height="@dimen/h_52"
+            android:layout_marginLeft="@dimen/w_48"
+            android:layout_marginTop="@dimen/h_28"
+            android:layout_toRightOf="@+id/activity_gift_buy_search_img"
+            android:focusable="true"
+            android:src="@drawable/activity_gift_buy_shopping_cart" />
+
+
+        <com.owen.tvrecyclerview.widget.TvRecyclerView
+            android:id="@+id/activity_gift_buy_recycler_view"
+            android:layout_width="@dimen/w_388"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_gift_buy_shopping_cart_img"
+            android:layout_marginTop="@dimen/h_96"
+            android:orientation="vertical"
+            app:tv_layoutManager="ListLayoutManager" />
+
+    </RelativeLayout>
+
+
+    <com.yht.iptv.tools.CustomGridViewTv
+        android:id="@+id/activity_gift_buy_grid_view"
+        android:layout_width="@dimen/w_1424"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/w_5"
+        android:layout_marginTop="@dimen/h_170"
+        android:layout_toRightOf="@+id/left_rl"
+        android:horizontalSpacing="@dimen/w_32"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/h_10" />
+
+
+    <com.open.androidtvwidget.view.MainUpView
+        android:id="@+id/mainUpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

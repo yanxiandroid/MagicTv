@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/w_1920"
+        android:layout_height="@dimen/h_1080" />
+
+    <include
+        android:id="@+id/general_title"
+        layout="@layout/general_main_info"/>
+
+    <LinearLayout
+        android:id="@+id/ll_qrcode"
+        android:layout_width="@dimen/w_1532"
+        android:layout_height="@dimen/h_756"
+        android:layout_below="@+id/general_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_100"
+        >
+
+        <LinearLayout
+            android:layout_width="@dimen/w_444"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/w_164"
+            android:layout_marginRight="@dimen/w_316"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/w_444"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/h_15"
+                >
+
+                <TextView
+                    android:id="@+id/tv_number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1."
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/w_60" />
+
+                <TextView
+                    android:id="@+id/tv_1msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_scan"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/w_40" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_444"
+                android:layout_height="@dimen/h_444"
+                android:background="@drawable/qrcode_bg"
+                android:layout_marginTop="@dimen/h_24">
+
+                <ImageView
+                    android:id="@+id/iv_app_address"
+                    android:layout_width="@dimen/w_420"
+                    android:layout_height="@dimen/h_420"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_scan_detail"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/w_24"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="@dimen/h_20"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/w_444"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/h_15"
+                >
+
+                <TextView
+                    android:id="@+id/tv_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2."
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/w_60" />
+
+                <TextView
+                    android:id="@+id/tv_2msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_connect"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/w_40" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_444"
+                android:layout_height="@dimen/h_444"
+                android:background="@drawable/qrcode_bg"
+                android:layout_marginTop="@dimen/h_24">
+
+                <ImageView
+                    android:id="@+id/iv_ip_address"
+                    android:layout_width="@dimen/w_420"
+                    android:layout_height="@dimen/h_420"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_connect_detail"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/w_24"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="@dimen/h_28"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

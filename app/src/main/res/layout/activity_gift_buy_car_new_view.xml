@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_gift_buy_car_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/w_1920"
+        android:layout_height="@dimen/h_1080" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_194"
+        android:layout_marginTop="@dimen/h_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/car_img"
+            android:layout_width="@dimen/w_72"
+            android:layout_height="@dimen/h_72"
+            android:src="@drawable/hotel_shop_car" />
+
+        <TextView
+            android:id="@+id/car_title_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_28"
+            android:layout_toRightOf="@+id/car_img"
+            android:text="购物车"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_60" />
+
+        <TextView
+            android:id="@+id/car_room_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/car_title_name_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/w_196"
+            android:text="房间号：8084"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_36" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_134"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/w_388"
+            android:layout_height="@dimen/h_2"
+            android:layout_marginRight="@dimen/w_26"
+            android:background="#ffd699" />
+
+        <TextView
+            android:id="@+id/car_hotel_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五星级至尊酒店商城"
+            android:textColor="#ffd699"
+            android:textSize="@dimen/w_48" />
+
+        <ImageView
+            android:layout_width="@dimen/w_388"
+            android:layout_height="@dimen/h_2"
+            android:layout_marginLeft="@dimen/w_26"
+            android:background="#ffd699" />
+    </LinearLayout>
+
+
+    <com.owen.tvrecyclerview.widget.TvRecyclerView
+        android:id="@+id/car_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_452"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/w_282"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        app:tv_layoutManager="ListLayoutManager" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/h_142"
+        android:layout_marginLeft="@dimen/w_194"
+        android:layout_marginRight="@dimen/w_194">
+
+        <TextView
+            android:id="@+id/car_price_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/car_all_price_text"
+            android:textColor="#fff"
+            android:textSize="@dimen/w_36" />
+
+        <TextView
+            android:id="@+id/car_all_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/w_68"
+            android:layout_toRightOf="@+id/car_price_num_text"
+            android:textColor="#ffd699"
+            android:textSize="@dimen/w_52" />
+
+
+        <Button
+            android:id="@+id/car_clear_btn"
+            android:layout_width="@dimen/w_260"
+            android:layout_height="@dimen/h_80"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/hotel_shop_car_choose"
+            android:gravity="center"
+            android:text="清空购物车"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_36" />
+
+        <Button
+            android:id="@+id/car_apply_btn"
+            android:layout_width="@dimen/w_260"
+            android:layout_height="@dimen/h_80"
+            android:layout_marginRight="@dimen/w_64"
+            android:layout_toLeftOf="@+id/car_clear_btn"
+            android:background="@drawable/hotel_shop_car_choose"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_36" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/h_56"
+        android:alpha="0.5"
+        android:text="注：点击提交订单，手机扫描弹出的二维码后，可以在手机上修改商品信息"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/w_24" />
+
+    <com.open.androidtvwidget.view.MainUpView
+        android:id="@+id/mainUpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/car_empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/w_228"
+            android:layout_height="@dimen/h_228"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/shop_car_empty_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_20"
+            android:gravity="center"
+            android:text="您没有选择商品!"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_48" />
+    </LinearLayout>
+
+
+</RelativeLayout>

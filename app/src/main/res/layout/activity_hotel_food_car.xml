@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotel_food_bg">
+
+    <TextView
+        android:id="@+id/food_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_232"
+        android:layout_marginTop="@dimen/h_102"
+        android:textColor="#ffd699"
+        android:textSize="@dimen/w_52" />
+
+    <TextView
+        android:id="@+id/food_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/food_car_name"
+        android:layout_below="@+id/food_car_name"
+        android:layout_marginTop="@dimen/h_38"
+        android:textColor="#ffd699"
+        android:textSize="@dimen/w_32" />
+
+
+    <TextView
+        android:id="@+id/food_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/food_car_name"
+        android:layout_below="@+id/food_room"
+        android:layout_marginTop="@dimen/h_56"
+        android:textColor="#50ffffff"
+        android:textSize="@dimen/w_28" />
+
+        <com.owen.tvrecyclerview.widget.TvRecyclerView
+            android:id="@+id/food_car_recycler"
+            android:layout_width="@dimen/w_1516"
+            android:layout_height="@dimen/h_324"
+            android:layout_marginTop="@dimen/h_450"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/w_232"
+            app:tv_layoutManager="ListLayoutManager" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_84"
+        android:layout_alignLeft="@+id/food_car_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/h_114"
+        android:layout_marginRight="@dimen/w_216">
+
+        <TextView
+            android:id="@+id/food_car_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/food_car_price"
+            android:textColor="@color/white"
+            android:textSize="@dimen/w_42" />
+
+        <TextView
+            android:id="@+id/food_car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_64"
+            android:layout_toRightOf="@+id/food_car_num"
+            android:textColor="#f53131"
+            android:textSize="@dimen/w_52" />
+
+        <Button
+            android:id="@+id/food_car_clear"
+            android:layout_width="@dimen/w_220"
+            android:layout_height="@dimen/w_60"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/clear_order"
+            android:textColor="#20ffffff"
+            android:textSize="@dimen/w_42" />
+
+        <Button
+            android:id="@+id/food_car_apply"
+            android:layout_width="@dimen/w_180"
+            android:layout_height="@dimen/w_60"
+            android:layout_marginRight="@dimen/w_64"
+            android:layout_toLeftOf="@+id/food_car_clear"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/apply_order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/w_42" />
+
+
+        <ImageView
+            android:id="@+id/food_car_apply_img"
+            android:layout_width="@dimen/w_180"
+            android:layout_height="@dimen/h_4"
+            android:layout_alignLeft="@+id/food_car_apply"
+            android:layout_alignRight="@+id/food_car_apply"
+            android:layout_below="@+id/food_car_apply"
+            android:layout_marginTop="@dimen/h_16"
+            android:background="#f53131"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/food_car_clear_img"
+            android:layout_width="@dimen/w_220"
+            android:layout_height="@dimen/h_4"
+            android:layout_alignLeft="@+id/food_car_clear"
+            android:layout_alignRight="@+id/food_car_clear"
+            android:layout_below="@+id/food_car_clear"
+            android:layout_marginTop="@dimen/h_16"
+            android:background="#f53131"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/car_empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/w_228"
+            android:layout_height="@dimen/h_228"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/shop_car_empty_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_64"
+            android:gravity="center"
+            android:text="@string/car_nothing"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/w_42" />
+    </LinearLayout>
+
+
+</RelativeLayout>

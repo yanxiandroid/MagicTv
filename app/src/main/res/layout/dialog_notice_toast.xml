@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/w_880"
+    android:layout_height="@dimen/h_464"
+    android:background="#F2333335">
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_120"
+        android:text="@string/notice"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/w_42"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_200"
+        android:text="@string/notice_detail"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_below="@+id/tv_notice"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/w_42"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_2"
+        android:background="#1A000000"
+        android:layout_below="@+id/tv_content"
+        />
+
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="@dimen/w_254"
+            android:layout_height="@dimen/h_76"
+            android:text="@string/agree"
+            android:textSize="@dimen/w_42"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/h_30"
+            android:background="@drawable/dialog_bg_selector"
+            />
+
+
+
+</RelativeLayout>

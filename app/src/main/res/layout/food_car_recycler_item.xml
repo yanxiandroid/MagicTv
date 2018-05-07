@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="@dimen/w_472"
+    android:layout_height="@dimen/h_324"
+    android:focusable="true"
+    android:layout_marginRight="@dimen/w_50"
+    android:focusableInTouchMode="true">
+
+
+    <ImageView
+        android:id="@+id/car_item_img"
+        android:layout_width="@dimen/w_472"
+        android:layout_height="@dimen/h_276"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/car_item_name_rl"
+        android:layout_width="@dimen/w_472"
+        android:layout_height="@dimen/h_76"
+        android:layout_alignBottom="@+id/car_item_img"
+        android:layout_alignParentRight="true"
+        android:background="#805b554f"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/car_item_name"
+        android:layout_width="@dimen/w_472"
+        android:layout_height="@dimen/h_76"
+        android:layout_alignBottom="@+id/car_item_img"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_32"
+        android:paddingLeft="@dimen/w_20"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:id="@+id/car_item_price_rl"
+        android:layout_width="@dimen/w_200"
+        android:layout_height="@dimen/h_48"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/car_item_img"
+        android:background="#10ffffff">
+
+        <TextView
+            android:id="@+id/car_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/w_10"
+            android:textColor="@color/car_num_preselected"
+            android:textSize="@dimen/w_28" />
+
+        <TextView
+            android:id="@+id/car_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_10"
+            android:textColor="@color/car_num_preselected"
+            android:textSize="@dimen/w_28" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
